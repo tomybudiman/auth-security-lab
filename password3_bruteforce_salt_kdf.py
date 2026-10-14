@@ -10,7 +10,7 @@ salt 1 digit, digabung di depan, salt tidak diberikan.
 PIN target: 6 digit, 000000-999999, zero padding
 
 Cara pakai:
-    python3 soal3_bruteforce_salt_kdf.py
+    python3 password3_bruteforce_salt_kdf.py
 """
 
 import hashlib

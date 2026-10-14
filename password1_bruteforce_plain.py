@@ -5,7 +5,7 @@ Algoritma: hash = MD5(PIN)
 PIN target: 6 digit, 000000-999999, zero padding
 
 Cara pakai:
-    python3 soal1_bruteforce_plain.py
+    python3 password1_bruteforce_plain.py
 """
 
 import hashlib

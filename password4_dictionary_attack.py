@@ -8,7 +8,7 @@ Wordlist: pinlist.txt (1000 kandidat PIN, salah satunya adalah PIN target)
 Cara pakai:
     1. Taruh file pinlist.txt di folder yang sama dengan script ini
        (atau ubah WORDLIST_PATH di bawah)
-    2. python3 soal4_dictionary_attack.py
+    2. python3 password4_dictionary_attack.py
 """
 
 import hashlib
