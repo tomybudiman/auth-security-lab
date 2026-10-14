@@ -1,16 +1,3 @@
-"""
-AFL-3 Sistem Autentikasi - Password
-Soal #4: Dictionary attack (wordlist)
-Algoritma: hash = MD5(PIN)
-Target sama dengan Soal #1 (pembuktian silang).
-Wordlist: pinlist.txt (1000 kandidat PIN, salah satunya adalah PIN target)
-
-Cara pakai:
-    1. Taruh file pinlist.txt di folder yang sama dengan script ini
-       (atau ubah WORDLIST_PATH di bawah)
-    2. python3 password_dictionary_attack.py
-"""
-
 import hashlib
 import time
 import os

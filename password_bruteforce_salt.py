@@ -1,14 +1,3 @@
-"""
-AFL-3 Sistem Autentikasi - Password
-Soal #2: Brute-force + unknown salt (1 digit)
-Algoritma: hash = MD5(salt || PIN)
-salt digabung di depan PIN, salt in {"0".."9"} (tidak diketahui)
-PIN target: 6 digit, 000000-999999, zero padding
-
-Cara pakai:
-    python3 password_bruteforce_salt.py
-"""
-
 import hashlib
 import time
 

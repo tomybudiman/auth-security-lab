@@ -1,13 +1,3 @@
-"""
-AFL-3 Sistem Autentikasi - Password
-Soal #1: Brute-force (plain)
-Algoritma: hash = MD5(PIN)
-PIN target: 6 digit, 000000-999999, zero padding
-
-Cara pakai:
-    python3 password_bruteforce_plain.py
-"""
-
 import hashlib
 import time
 

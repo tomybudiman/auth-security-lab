@@ -1,18 +1,3 @@
-"""
-AFL-3 Sistem Autentikasi - Password
-Soal #3: Brute-force + unknown salt (1 digit) + KDF (3x)
-Algoritma:
-    h0 = salt || PIN
-    h1 = MD5(h0)
-    h2 = MD5(h1)
-    h3 = MD5(h2)  -> final hash
-salt 1 digit, digabung di depan, salt tidak diberikan.
-PIN target: 6 digit, 000000-999999, zero padding
-
-Cara pakai:
-    python3 password_bruteforce_salt_kdf.py
-"""
-
 import hashlib
 import time
 
