@@ -6,7 +6,7 @@ salt digabung di depan PIN, salt in {"0".."9"} (tidak diketahui)
 PIN target: 6 digit, 000000-999999, zero padding
 
 Cara pakai:
-    python3 password2_bruteforce_salt.py
+    python3 password_bruteforce_salt.py
 """
 
 import hashlib

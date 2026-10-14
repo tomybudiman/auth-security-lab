@@ -27,20 +27,20 @@ hingga pendekatan *dictionary attack*.
 Jalankan tiap script langsung dari folder repo:
 
 ```bash
-python3 password1_bruteforce_plain.py
-python3 password2_bruteforce_salt.py
-python3 password3_bruteforce_salt_kdf.py
-python3 password4_dictionary_attack.py   # butuh pinlist.txt di folder yang sama
+python3 password_bruteforce_plain.py
+python3 password_bruteforce_salt.py
+python3 password_bruteforce_salt_kdf.py
+python3 password_dictionary_attack.py   # butuh pinlist.txt di folder yang sama
 ```
 
 ### Ringkasan hasil
 
 | Soal | Script | Skema hash | Salt | PIN | Target hash |
 |------|--------|-----------|:----:|:---:|-------------|
-| #1 | `password1_bruteforce_plain.py` | `MD5(PIN)` | — | `202345` | `0110b96270248f746ecca06f1ce09746` |
-| #2 | `password2_bruteforce_salt.py` | `MD5(salt‖PIN)` | `7` | `202345` | `8d4c531eb4b0f54df72aa6839abbeaec` |
-| #3 | `password3_bruteforce_salt_kdf.py` | `MD5³(salt‖PIN)` (iterasi 3×) | `3` | `202345` | `b20f8b0405b88e2b0b50eb3356d34ba7` |
-| #4 | `password4_dictionary_attack.py` | `MD5(PIN)` via wordlist | — | `202345` | `0110b96270248f746ecca06f1ce09746` |
+| #1 | `password_bruteforce_plain.py` | `MD5(PIN)` | — | `202345` | `0110b96270248f746ecca06f1ce09746` |
+| #2 | `password_bruteforce_salt.py` | `MD5(salt‖PIN)` | `7` | `202345` | `8d4c531eb4b0f54df72aa6839abbeaec` |
+| #3 | `password_bruteforce_salt_kdf.py` | `MD5³(salt‖PIN)` (iterasi 3×) | `3` | `202345` | `b20f8b0405b88e2b0b50eb3356d34ba7` |
+| #4 | `password_dictionary_attack.py` | `MD5(PIN)` via wordlist | — | `202345` | `0110b96270248f746ecca06f1ce09746` |
 
 ---
 
@@ -176,10 +176,10 @@ Waktu eksekusi: 0.000 detik
 
 ```
 .
-├── password1_bruteforce_plain.py     # Soal #1 — brute-force MD5 polos
-├── password2_bruteforce_salt.py      # Soal #2 — brute-force + salt 1 digit
-├── password3_bruteforce_salt_kdf.py  # Soal #3 — brute-force + salt + KDF 3×
-├── password4_dictionary_attack.py    # Soal #4 — dictionary attack
+├── password_bruteforce_plain.py     # Soal #1 — brute-force MD5 polos
+├── password_bruteforce_salt.py      # Soal #2 — brute-force + salt 1 digit
+├── password_bruteforce_salt_kdf.py  # Soal #3 — brute-force + salt + KDF 3×
+├── password_dictionary_attack.py    # Soal #4 — dictionary attack
 ├── pinlist.txt                   # wordlist untuk Soal #4
 └── README.md
 ```
